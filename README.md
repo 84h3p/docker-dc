@@ -3,7 +3,7 @@
 ## Install Docker
 Start the bash script docker-compose-install.sh
 
-`docker network create router`
+`docker network create router` to create a docker network for traefik
 
 ## Configuration Traefik
 ### .env
