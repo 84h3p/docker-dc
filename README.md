@@ -16,6 +16,10 @@ Start the bash script docker-compose-install.sh
 3. Set the domain var (access)
 4. Set the POSTGRES_PASSWORD var
 
+## Configuration Zabbix
+
+## Configuration Nextcloud
+
 ## Usage
 
 Start script - start.sh
