@@ -4,7 +4,7 @@
 Start the bash script docker-compose-install.sh
 
 ## Configuration Traefik
-# .env
+### .env
 1. Set the ACME_EMAIL var
 
 ## Configuration NetBox
