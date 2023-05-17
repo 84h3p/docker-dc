@@ -55,6 +55,12 @@ services:
       - nextcloud
   web:
     image: nginx
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=router"
+      - "traefik.http.routers.nextcloud.rule=Host(`${TRAEFIK_RULE_HOST}`)"
+      - "traefik.http.routers.nextcloud.entrypoints=websecure"
+      - "traefik.http.routers.nextcloud.tls.certresolver=letsencrypt"
     ports:
       - 80:80
     links:
