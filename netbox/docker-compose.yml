@@ -24,7 +24,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Berlin
+      - TZ=Asia/Omsk
       - SUPERUSER_EMAIL=${SUPERUSER_EMAIL}
       - SUPERUSER_PASSWORD=${SUPERUSER_PASSWORD}
       - ALLOWED_HOST=${DOMAIN}
@@ -53,3 +53,12 @@ services:
       - netbox-db
       - netbox-redis
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=router"
+      - "traefik.http.routers.netbox.rule=Host(`${TRAEFIK_RULE_HOST}`)"
+      - "traefik.http.routers.netbox.entrypoints=websecure"
+      - "traefik.http.routers.netbox.tls.certresolver=letsencrypt"
+networks:
+ router:
+   external: true
