@@ -40,10 +40,10 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Asia/Omsk
       - NEXTCLOUD_ADMIN_USER=User
       - NEXTCLOUD_ADMIN_PASSWORD=passNEXTCLOUD
-      - NEXTCLOUD_TRUSTED_DOMAINS=10.20.0.27
+      - NEXTCLOUD_TRUSTED_DOMAINS=
       - NEXTCLOUD_DATA_DIR=/var/www/html/data
       - MYSQL_HOST=db
       - MYSQL_USER=nextcloud
@@ -62,7 +62,7 @@ services:
       - "traefik.http.routers.nextcloud.entrypoints=websecure"
       - "traefik.http.routers.nextcloud.tls.certresolver=letsencrypt"
     ports:
-      - 80:80
+      - 8680:80
     links:
       - app
     volumes:
