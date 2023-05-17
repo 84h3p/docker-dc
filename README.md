@@ -15,6 +15,7 @@ Start the bash script docker-compose-install.sh
 2. Set the SUPERUSER_PASSWORD var
 3. Set the domain var (access)
 4. Set the POSTGRES_PASSWORD var
+5. Set the TRAEFIL_RULE_HOST var
 
 ## Configuration Zabbix
 
