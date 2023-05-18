@@ -1,7 +1,3 @@
-
-#
-#Не забудь заменить NEXTCLOUD_TRUSTED_DOMAINS на свое
-# А также ниже в конфиге эти данные:
 #      - NEXTCLOUD_ADMIN_USER
 #      - NEXTCLOUD_ADMIN_PASSWORD
 #      - NEXTCLOUD_TRUSTED_DOMAINS
