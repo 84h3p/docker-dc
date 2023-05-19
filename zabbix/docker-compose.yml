@@ -35,6 +35,7 @@
         networks:
           default:
             ipv4_address: 172.28.0.254
+          router:
         depends_on:
           - zabbix-mariadb
      
@@ -51,7 +52,7 @@
           ZBX_SERVER_HOST: zabbix-server
           PHP_TZ: "Europe/Moscow"
         ports:
-          - 8080:8080
+          - 8380:8080
           - 8443:8443
         networks:
           - default
