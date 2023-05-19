@@ -12,10 +12,10 @@
         environment:
           TZ: "Asia/Omsk"
           MYSQL_ROOT_USER: root
-          MYSQL_ROOT_PASSWORD: secret
+          MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
           MYSQL_DATABASE: zabbix
           MYSQL_USER: zabbix
-          MYSQL_PASSWORD: zabbixpass
+          MYSQL_PASSWORD: ${MYSQL_PASSWORD}
         networks:
           - default
           - router
@@ -31,7 +31,7 @@
           TZ: "Asia/Omsk"
           DB_SERVER_HOST: zabbix-mariadb
           MYSQL_USER: zabbix
-          MYSQL_PASSWORD: zabbixpass
+          MYSQL_PASSWORD: ${MYSQL_PASSWORD}
         networks:
           default:
             ipv4_address: 172.28.0.254
@@ -48,7 +48,7 @@
           TZ: "Asia/Omsk"
           DB_SERVER_HOST: zabbix-mariadb
           MYSQL_USER: zabbix
-          MYSQL_PASSWORD: zabbixpass
+          MYSQL_PASSWORD: ${MYSQL_PASSWORD}
           ZBX_SERVER_HOST: zabbix-server
           PHP_TZ: "Europe/Moscow"
         ports:
