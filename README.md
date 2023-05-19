@@ -10,17 +10,22 @@ Start the bash script docker-compose-install.sh
 1. Set the ACME_EMAIL var
 
 ## Configuration NetBox
-
+### .env
 1. Set the SUPERUSER_EMAIL var 
 2. Set the SUPERUSER_PASSWORD var
 3. Set the domain var (access)
 4. Set the POSTGRES_PASSWORD var
-5. Set the TRAEFIL_RULE_HOST var
+5. Set the TRAEFIK_RULE_HOST var
 
 ## Configuration Zabbix
+### .env
+1. Set the TRAEFIK_RULE_HOST var
+2. Set the MYSQL_PASSWORD var
+3. Set the MYSQL_ROOT_PASSWORD var
+
 
 ## Configuration Nextcloud
-
+### .env
 1. Set the TRAEFIK_RULE_HOST var
 2. Set the MYSQL_ROOT_PASSWORD var
 3. Set the MYSQL_PASSWORD var
