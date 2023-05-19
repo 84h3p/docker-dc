@@ -28,7 +28,7 @@
         hostname: zabbix-server
         restart: unless-stopped
         environment:
-          TZ: "Europe/Moscow"
+          TZ: "Asia/Omsk"
           DB_SERVER_HOST: zabbix-mariadb
           MYSQL_USER: zabbix
           MYSQL_PASSWORD: zabbixpass
@@ -45,7 +45,7 @@
         hostname: zabbix-web
         restart: unless-stopped
         environment:
-          TZ: "Europe/Moscow"
+          TZ: "Asia/Omsk"
           DB_SERVER_HOST: zabbix-mariadb
           MYSQL_USER: zabbix
           MYSQL_PASSWORD: zabbixpass
@@ -73,7 +73,6 @@
           driver: default
           config:
             - subnet: 172.28.0.0/16
-
       router:
         external: true
 
