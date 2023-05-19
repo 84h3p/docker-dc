@@ -21,6 +21,13 @@ Start the bash script docker-compose-install.sh
 
 ## Configuration Nextcloud
 
+1. Set the TRAEFIK_RULE_HOST var
+2. Set the MYSQL_ROOT_PASSWORD var
+3. Set the MYSQL_PASSWORD var
+4. Set the NEXTCLOUD_ADMIN_USER var
+5. Set the NEXTCLOUD_ADMIN_PASSWORD var
+6. Set the NEXTCLOUD_TRUSTED_DOMAINS var
+
 ## Usage
 
 Start script - start.sh
