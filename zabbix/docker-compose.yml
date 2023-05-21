@@ -50,7 +50,7 @@
           MYSQL_USER: zabbix
           MYSQL_PASSWORD: ${MYSQL_PASSWORD}
           ZBX_SERVER_HOST: zabbix-server
-          PHP_TZ: "Europe/Moscow"
+          PHP_TZ: "Asia/Omsk"
         ports:
           - 8380:8080
           - 8443:8443
